@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .project {
+      margin-bottom: 1em;
+      padding: 1em;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    } #home{
+        text-align: center;
+        padding:20px;
+ 
+    }
+   
+    #home p{ 
+        padding-bottom:10px;
+        text-align: center;
+        margin: 10px;
+        margin-bottom: 20px;
+        color: #444;
+    }
+   #home h2{
+    color: #000;
+   }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BONTHU MADHU PAVAN </h1>
+    <p>Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+  <p>To work for an organization which provides me the opportunity to improve my skills and knowledge to growth along with the organization objective.  </p>
+  </section>
+
+  <section id="about">
+    <h1 style="color: #340202; text-decoration:underline;">About Me</h1>
+    <p>Course: B. TECH  <br>                                                                                      
+        Branch: PETROLEUM TECHNOLOGY <br>
+        Email ID: madhupavan0905@gmail.com   <br>                                                          
+        LinkedIn:  https://www.linkedin.com/in/madhu-pavan <br>
+         Contact No: +919063219239 <br>
+         Hyderabad, Telangana. 
+        <h2 style="color: #444; font-size: 20px;">Skills & Abilities </h2>
+        ▪Seasoned in creation of interactive web applications utilizing HTML, CSS and JavaScript frame works. <br> 
+        ▪Capable of creating responsive web designs that ensure a seamless user experience on various screen sizes using BootStrap. <br> 
+        ▪Well versed in developing websites using various components in React JS. <br>
+        ▪Skilled in writing SQL queries for data extraction and reporting.  <br> 
+        <h2 style="color: #444; font-size: 20px;">Education</h2>
+        B. Tech: Aditya engineering college,Dept: petroleum technology, (2023) Percentage:63.38% <br>
+     
+        Diploma: Aditya engineering college, Kakinada, Dept: petroleum technology, (2020) Percentage: 68% <br>
+     
+        SSC: Aditya E.M school G.mamidada , (2016) CGPA:8.7 <br></p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="project-list"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Sample project data
+    const projects = [
+      { title: 'Quiz game ', description: 'Development and problem-solving skills, this allowed users to take quiz and give instant feedback on their performance' },
+      { title: 'To-do List ', description: 'I develop a web-based Todo list app using java script, HTML, CSS, this app should all user to add, update, remove the tasks' },
+      { title: 'E-Commerce Website Development', description: 'I developed this website using react j.s   providing a seamless shopping experience for the users ' }
+    ];
+
+    // Display projects dynamically
+    const projectList = document.getElementById('project-list');
+    projects.forEach(project => {
+      const projectElement = document.createElement('div');
+      projectElement.classList.add('project');
+      projectElement.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
+      projectList.appendChild(projectElement);
+    });
+  </script>
+</body>
+</html>
